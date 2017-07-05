@@ -1,4 +1,10 @@
 # AKL game servers
+
+## Install
+Run install script
+
+    sudo ./install.sh
+
 ## Start
 Start instances
 
@@ -8,4 +14,3 @@ Start instances
 ## Links
 https://developer.valvesoftware.com/wiki/SteamCMD#Downloading_SteamCMD
 https://developer.valvesoftware.com/wiki/Command_Line_Options
-
