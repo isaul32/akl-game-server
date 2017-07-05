@@ -1,0 +1,11 @@
+[Unit]
+Description=CS:GO server - %i
+After=network.target
+
+[Service]
+WorkingDirectory=/home/steam/csgo
+User=steam
+#ExecStartPre=/home/steam/Steam/steamcmd.sh +runscript /home/steam/Steam/csgo_update
+ExecStart=/home/steam/instances/%i.sh
+TimeoutStartSec=0
+Restart=always
