@@ -1,5 +1,5 @@
 [Unit]
-Description=CS:GO server - %i
+Description=CS:GO server - %I
 After=network.target
 
 [Service]
