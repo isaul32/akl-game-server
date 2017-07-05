@@ -36,3 +36,10 @@ echo -----------------
 echo Copy systemd unit
 echo -----------------
 cp systemd-scripts/csgoserver@.service /etc/systemd/system
+
+echo -------------
+echo Start servers
+echo -------------
+echo run commands: 
+echo     systemctl start csgoserver@akl1.service
+echo     systemctl start csgoserver@akl2.service
