@@ -1,0 +1,6 @@
+[Unit]
+Description=Restart AKL servers
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl try-restart akl1.service akl2.service akl3.service akl4.service

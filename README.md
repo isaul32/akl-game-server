@@ -8,8 +8,17 @@ Run install script
 ## Start
 Start instances
 
-    systemctl start csgoserver@akl1.service
-    systemctl start csgoserver@akl2.service
+    systemctl start akl1.service
+    systemctl start akl2.service
+    systemctl start akl3.service
+    systemctl start akl4.service
+
+## Enable units
+    systemctl enable akl1.service
+    systemctl enable akl2.service
+    systemctl enable akl3.service
+    systemctl enable akl4.service
+    systemctl enable akl-restart.timer
 
 ## Links
 https://developer.valvesoftware.com/wiki/SteamCMD#Downloading_SteamCMD

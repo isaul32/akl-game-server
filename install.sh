@@ -26,20 +26,32 @@ echo Install SteamCMD
 echo ----------------
 su -c "./scripts/install-steam.sh" steam
 
+echo ---------------------
+echo Install CS:GO configs
+echo ---------------------
+cp configs/* /home/steam/csgo/csgo/cfg
+chown -R steam:steam /home/steam/csgo/csgo/cfg
+
 echo ----------------------
 echo Copy example instances
 echo ----------------------
-cp instances-scripts/* /home/steam/instances
+cp instances/* /home/steam/instances
 chown -R steam:steam /home/steam/instances
 
 echo -----------------
 echo Copy systemd unit
 echo -----------------
-cp systemd-scripts/csgoserver@.service /etc/systemd/system
+cp systemd/* /etc/systemd/system
 
 echo -------------
 echo Start servers
 echo -------------
-echo run commands: 
+echo configure your instance scripts /home/steam/instances
+echo
+echo run commands:
 echo     systemctl start csgoserver@akl1.service
 echo     systemctl start csgoserver@akl2.service
+echo     systemctl start csgoserver@akl3.service
+echo     systemctl start csgoserver@akl4.service
+echo
+echo and remember enable systemd units!

@@ -1,0 +1,8 @@
+[Unit]
+Description=Restart AKL servers every day for check updates
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+
+[Install]
+WantedBy=timers.target
