@@ -5,9 +5,7 @@ After=network.target
 [Service]
 WorkingDirectory=/home/steam/csgo
 User=steam
-ExecStartPre=/home/steam/Steam/steamcmd.sh +login anonymous +force_install_dir /home/steam/csgo +app_update 740 +quit
 ExecStart=/home/steam/instances/akl2.sh
-TimeoutStartSec=0
 Restart=always
 Nice=-20
 OOMScoreAdjust=-1000
